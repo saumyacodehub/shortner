@@ -45,6 +45,7 @@ function StatsURL(
   const [stats, setStats] = useState<any>(null);
   const { userState } = useMain();
   const [timeSlot, setTimeSlot] = useState(TimeSlots["1d"]);
+  console.log(setTimeSlot)
 
   useEffect(() => {
     if (userState.login && urlObj) {
